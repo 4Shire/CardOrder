@@ -11,7 +11,7 @@ import static com.codeborne.selenide.Selenide.open;
 public class CardOrderTest {
     @Test
     public void shouldTest(){
-        open("http://localhost:7777");
+        open("http://localhost:9999");
         SelenideElement form = $("form");
         form.$("[data-test-id=name] input").setValue("Иван Дулин");
         form.$("[data-test-id=phone] input").setValue("+79999999999");
