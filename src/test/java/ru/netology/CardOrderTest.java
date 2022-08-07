@@ -1,6 +1,5 @@
 package ru.netology;
 
-import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.SelenideElement;
 import org.junit.jupiter.api.Test;
 
@@ -10,10 +9,10 @@ import static com.codeborne.selenide.Selenide.open;
 
 public class CardOrderTest {
     @Test
-    public void shouldTest(){
+    public void shouldTest() {
         open("http://localhost:9999");
         SelenideElement form = $("form");
-        form.$("[data-test-id=name] input").setValue("Иван Дулин");
+        form.$("[data-test-id=name] input").setValue("Иван Дулин-Фрунзе");
         form.$("[data-test-id=phone] input").setValue("+79999999999");
         form.$("[data-test-id=agreement").click();
         form.$("button").click();
